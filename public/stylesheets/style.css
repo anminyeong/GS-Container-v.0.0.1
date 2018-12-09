@@ -1,6 +1,28 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
 
+.introduce-th{
+  width:164px;
+  border-top-color: black;
+}
+
+.sub-menu-section{
+  text-align: center;
+  line-height: 225px;
+  height: 225px;
+  background: url("../images/home/colorful-containers-resized.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pagination{
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+  justify-content: center;
+}
+
 .gs-title{
   font-size: 55px;
   color: #04B404;
@@ -11,6 +33,18 @@
   font-size: 50px;
   color: white;
   font-weight: bold;
+}
+
+.gs-sub-title-black{
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .gs-sub-title{
+    font-size: 40px;
+  }
 }
 
 body {
@@ -131,21 +165,26 @@ label {
     font-size: 12px;
   }
 
-  .col-lg-4{
-    width:50%;
+  .col-sm-12.col-lg-4{
+    width:100%;
+    height: 90px;
     padding-right: 5px;
     padding-left: 5px;
   }
 
-  .col-sm-12{
-    width:50%;
-    padding-right: 5px;
-    padding-left: 5px;
+  .col-sm-12.col-lg-4 .img-fluid {
+    height: 80px;
+    width: 30%;
+    display: inline-block;
   }
 
+  /*
   .card-body{
     font-size: 5px;
+    display: inline-block;
   }
+  */
+
 }
 
 .nav-pills.transparent .nav-link.active {
@@ -686,7 +725,7 @@ ul.pagination .active a {
 }
 
 .navigation {
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .login-button {
@@ -1377,6 +1416,12 @@ ul.pagination .active a {
 
 .product-item .card .card-body {
   padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .product-item .card .card-body {
+    padding: 5px;
+  }
 }
 
 .product-item .card .card-body .card-title {

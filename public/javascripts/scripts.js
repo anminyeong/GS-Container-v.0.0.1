@@ -80,6 +80,7 @@
 
 // GOogle Map
 
+/*
 window.marker = null;
 
 function initialize() {
@@ -153,11 +154,8 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-
-
-
-var slider = new Slider('#ex2', {});
+*/
+//var slider = new Slider('#ex2', {});
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
